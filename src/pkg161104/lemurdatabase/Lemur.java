@@ -16,23 +16,12 @@ public abstract class Lemur extends Mammal{
     super();
 }
     
-    public void Age(){
-        ageNum = (int)(Math.random()*15);
-        output=output+"\nAge = "+ageNum;
-    }
+    public abstract void Age();
     
-    public void Weight(){
-        weightNum = Math.random()*5;
-        output=output+"\nWeight = "+weightNum;
-    }
+    public abstract void Weight();
     
-    public void Gender(){
-        genderNum = (int)(Math.random()*2+1);
-        if(genderNum == 1){
-            output=output+"\nGender = Male";
-        }else{
-            output=output+"\nGender = Female";
-        }
-    }
+    public abstract void Gender();
+    
+    public abstract String toString();
     
 }
