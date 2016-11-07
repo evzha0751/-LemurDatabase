@@ -6,12 +6,14 @@
 
 package pkg161104.lemurdatabase;
 
-
+/**
+ * Lemur Class
+ */
 public abstract class Lemur extends Mammal{
-    private int ageNum,genderNum,ColorNum;
-    private double weightNum;
-    private String output,gender,color;
     
+    /**
+     * 
+     */
     public Lemur(){
     super();
 }

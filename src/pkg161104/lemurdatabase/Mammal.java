@@ -7,8 +7,7 @@
 package pkg161104.lemurdatabase;
 
 /**
- *
- * @author evzha0751
+ *Mammal Class
  */
 public abstract class Mammal {
     public Mammal(){
