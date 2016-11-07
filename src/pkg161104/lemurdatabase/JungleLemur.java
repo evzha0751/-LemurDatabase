@@ -15,6 +15,10 @@ public class JungleLemur extends Lemur {
     private double weightNum;
     private String output,gender,color;
     
+    public JungleLemur(){
+        super();
+    }
+    
     public void Age(){
         ageNum = (int)(Math.random()*15);
     }

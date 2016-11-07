@@ -12,6 +12,13 @@ package pkg161104.lemurdatabase;
  */
 public abstract class Mammal {
     public Mammal(){
+    }
+    public abstract void Age();
     
-}
+    public abstract void Weight();
+    
+    public abstract void Gender();
+    
+    public abstract String toString();
+
 }

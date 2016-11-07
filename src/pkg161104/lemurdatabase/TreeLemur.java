@@ -15,6 +15,10 @@ public class TreeLemur extends Lemur{
     private double weightNum;
     private String output,gender;
     
+    public TreeLemur(){
+        super();
+    }
+    
     public void Age(){
         ageNum = (int)(Math.random()*15);
     }
