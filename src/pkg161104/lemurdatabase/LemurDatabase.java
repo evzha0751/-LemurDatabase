@@ -16,7 +16,7 @@ public class LemurDatabase {
 
     public static void main(String[] args) {
         int numberOfLemur,typeOfLemur,check;
-        Mammal mammal[];
+        
         ArrayList<Integer> list = new ArrayList<Integer>();
         Scanner input=new Scanner(System.in);
         
@@ -26,8 +26,7 @@ public class LemurDatabase {
         System.out.println("Please enter the type of Lumer to add:"
                 + "\n1 - Tree Lemur"
                 + "\n2 - Desert Lemur"
-                + "\n3 - Jungle Lemur"
-                + "\n( 0 - random");
+                + "\n3 - Jungle Lemur");
         
         for(int i=1;i<=numberOfLemur;i++){
             System.out.print("Lemur No."+i+" : ");
@@ -35,15 +34,28 @@ public class LemurDatabase {
             list.add(typeOfLemur);
         }
         
+        Mammal mammal[]=new Mammal[numberOfLemur];
         
         for(int i=0;i<numberOfLemur;i++){
             check=list.get(i);
             if(check==1){
-                
+                mammal[i]=new TreeLemur();
+                mammal[i].Age();
+                mammal[i].Gender();
+                mammal[i].Weight();
+                System.out.println("\n"+mammal[i].toString());
             }else if(check==2){
-                
+                mammal[i]=new DesertLemur();
+                mammal[i].Age();
+                mammal[i].Gender();
+                mammal[i].Weight();
+                System.out.println("\n"+mammal[i].toString());
             }else if(check==3){
-                
+                mammal[i]=new JungleLemur();
+                mammal[i].Age();
+                mammal[i].Gender();
+                mammal[i].Weight();
+                System.out.println("\n"+mammal[i].toString());
             }
         }
         
