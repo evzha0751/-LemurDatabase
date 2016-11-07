@@ -11,9 +11,9 @@ package pkg161104.lemurdatabase;
  * @author evzha0751
  */
 public class TreeLemur extends Lemur{
-    private int ageNum,genderNum,ColorNum;
+    private int ageNum,genderNum;
     private double weightNum;
-    private String output,gender,color;
+    private String output,gender;
     
     public void Age(){
         ageNum = (int)(Math.random()*15);
@@ -33,6 +33,16 @@ public class TreeLemur extends Lemur{
     }
     
     public String toString(){
+        output="Tree Lrmur:"
+                + "\nAge = "+ageNum
+                +"\nWeight = "+weightNum
+                +"\nGender = "+gender
+                +"\nLocation = Madagascar"
+                + "\nClassification = Prosimian"
+                + "\nCoat = Fur"
+                + "\nFood = Fruit"
+                + "\nColour = Red"
+                + "\nPAck Size = Large groups";
         return(output);
     }
 }

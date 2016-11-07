@@ -34,6 +34,17 @@ public class DesertLemur extends Lemur {
     }
     
     public String toString(){
+        output="Desert Lrmur:"
+                + "\nAge = "+ageNum
+                +"\nWeight = "+weightNum
+                +"\nGender = "+gender
+                +"\nLocation = Madagascar"
+                + "\nClassification = Prosimian"
+                + "\nCoat = Fur"
+                + "\nFemale Lemur = Dominant Role"
+                + "\nFood = Cacti"
+                + "\nColour = White"
+                + "\nPAck Size = Large groups";
         return(output);
     }
 }

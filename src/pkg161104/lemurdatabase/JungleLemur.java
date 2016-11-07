@@ -33,6 +33,16 @@ public class JungleLemur extends Lemur {
     }
     
     public String toString(){
-        return(output);
+       output="Jungle Lrmur:"
+                + "\nAge = "+ageNum
+                +"\nWeight = "+weightNum
+                +"\nGender = "+gender
+                +"\nLocation = Madagascar"
+                + "\nClassification = Prosimian"
+                + "\nCoat = Fur"
+                + "\nFood = Mice, Snails, and Insects"
+                + "\nColour = Black or Blue"
+                + "\nPAck Size = Small groups";
+       return(output);
     }
 }
