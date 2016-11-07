@@ -26,7 +26,8 @@ public class LemurDatabase {
         System.out.println("Please enter the type of Lumer to add:"
                 + "\n1 - Tree Lemur"
                 + "\n2 - Desert Lemur"
-                + "\n3 - Jungle Lemur");
+                + "\n3 - Jungle Lemur"
+                + "\n( 0 - random");
         
         for(int i=1;i<=numberOfLemur;i++){
             System.out.print("Lemur No."+i+" : ");
